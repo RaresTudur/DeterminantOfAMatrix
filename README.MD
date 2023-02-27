@@ -10,8 +10,7 @@ $$\begin{bmatrix}
    1 & 2 & 3 \\
    4 & 5 & 6 \\
    7 & 8 & 9 \\
-   \end{bmatrix}
-$$
+   \end{bmatrix}$$
 you would run the following command:
 
 ```
@@ -35,7 +34,7 @@ The script will output the determinant of the matrix using both the Leibniz meth
 
 ### Leibniz Method
 
-The Leibniz method has a time complexity of **O(n!)**, where n is the number of rows in the matrix. This method involves computing the sum of all possible products of elements from different rows and columns, where the sign of each product is $ sign = (-1)^i $ where i is the current row. Therefore, it can be computationally expensive for large matrices.
+The Leibniz method has a time complexity of **O(n!)**, where n is the number of rows in the matrix. This method involves computing the sum of all possible products of elements from different rows and columns, where the sign of each product is $sign = (-1)^i$ where i is the current row. Therefore, it can be computationally expensive for large matrices.
 
 ### Gauss-Elimination Method
 
