@@ -1,6 +1,3 @@
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 # Matrix Determinant Calculator
 
 This project is a simple Python script that calculates the determinant of a matrix using two different methods: the Leibniz method and the Gauss-Elimination method.
@@ -10,11 +7,12 @@ This project is a simple Python script that calculates the determinant of a matr
 To use this script, simply run the `determinant.py` file in your terminal, passing the matrix as a command-line argument. The matrix should be entered in row-major order, with rows separated by semicolons and values separated by spaces. For example, to calculate the determinant of the matrix
 
 
-$$\begin{bmatrix} 
+$\begin{bmatrix} 
    1 & 2 & 3 \\
    4 & 5 & 6 \\
    7 & 8 & 9 \\
-   \end{bmatrix}$$
+   \end{bmatrix}$
+
 you would run the following command:
 
 ```
