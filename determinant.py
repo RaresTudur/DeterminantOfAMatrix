@@ -15,7 +15,7 @@ def determinant_with_Leibniz(matrix):
         det += matrix[0][i] * sign ** i * subdet
     return det
 
-def determinant_with_Gauss(matrix):
+def determinant_with_Gauss_Jordan_elimination(matrix):
     dim = len(matrix)
     for i in range(dim):
         for j in range(i + 1,dim):
@@ -34,7 +34,7 @@ def interface():
     print("Please enter the matrix")
     matrix = [[int(x) for x in input().split()] for j in range(n)]
     print("Choose your method to calculate the determinant:")
-    print("1. Gauss Elimination Method")
+    print("1. Gauss–Jordan Elimination Method")
     print("2. Leibniz Method")
     print("3. Both Methods")
     method_selector = int(input())
@@ -42,10 +42,10 @@ def interface():
         case 1:
             print("The determinant of the matrix is", determinant_with_Leibniz(matrix))
         case 2:
-            print("The determinant of the matrix is", determinant_with_Gauss(matrix))
+            print("The determinant of the matrix is", determinant_with_Gauss_Jordan_elimination(matrix))
         case 3:
             print("The determinant of the matrix is:")
-            print("Using Gauss Elimination", determinant_with_Gauss(matrix))
+            print("Using Gauss–Jordan Elimination", determinant_with_Gauss_Jordan_elimination(matrix))
             print("Using Leibniz Method",determinant_with_Leibniz(matrix))
 
 if __name__ == "__main__":
