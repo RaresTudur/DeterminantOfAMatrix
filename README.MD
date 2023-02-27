@@ -6,7 +6,12 @@ This project is a simple Python script that calculates the determinant of a matr
 
 To use this script, simply run the `determinant.py` file in your terminal, passing the matrix as a command-line argument. The matrix should be entered in row-major order, with rows separated by semicolons and values separated by spaces. For example, to calculate the determinant of the matrix
 
-![equation](https://latex.codecogs.com/svg.image?\begin{bmatrix}1&space;&&space;2&space;&&space;3&space;\\4&space;&&space;5&space;&&space;6&space;\\7&space;&&space;8&space;&&space;9&space;\\\end{bmatrix})
+$$\begin{bmatrix} 
+   1 & 2 & 3 \\
+   4 & 5 & 6 \\
+   7 & 8 & 9 \\
+   \end{bmatrix}
+$$
 you would run the following command:
 
 ```
@@ -30,7 +35,7 @@ The script will output the determinant of the matrix using both the Leibniz meth
 
 ### Leibniz Method
 
-The Leibniz method has a time complexity of **O(n!)**, where n is the number of rows in the matrix. This method involves computing the sum of all possible products of elements from different rows and columns, where the sign of each product is ![equation](https://latex.codecogs.com/svg.image?sign&space;=&space;(-1)^i&space;) where i is the current row. Therefore, it can be computationally expensive for large matrices.
+The Leibniz method has a time complexity of **O(n!)**, where n is the number of rows in the matrix. This method involves computing the sum of all possible products of elements from different rows and columns, where the sign of each product is $ sign = (-1)^i $ where i is the current row. Therefore, it can be computationally expensive for large matrices.
 
 ### Gauss-Elimination Method
 
