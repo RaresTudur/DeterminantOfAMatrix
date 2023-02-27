@@ -4,17 +4,18 @@ This project is a simple Python script that calculates the determinant of a matr
 
 ## Usage
 
-To use this script, simply run the `determinant.py` file in your terminal, passing the matrix as a command-line argument. The matrix should be entered in row-major order, with rows separated by semicolons and values separated by spaces. For example, to calculate the determinant of the matrix
-
+To use this script, simply run the `determinant.py` file in your terminal, passing the matrix as a command-line argument. The matrix should be entered in row-major order, with rows separated by semicolons and values separated by spaces. For example, to calculate the determinant of the matrix:
 
 ```math
-1 2 3
-4 5 6
-7 8 9
+\begin{matrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+\end{matrix}
 ```
 you would run the following command:
 
-```
+```python
 python3 determinant.py
 Please enter the dimension of the matrix:
 3
