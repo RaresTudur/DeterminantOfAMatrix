@@ -27,3 +27,16 @@ Choose your method to calculate the determinant:
 2. Leibniz Method
 3. Both Methods
 ```
+
+
+The script will output the determinant of the matrix using both the Leibniz method and the Gauss-Elimination method.
+
+## Methodology
+
+### Leibniz Method
+
+The Leibniz method has a time complexity of **O(n!)**, where n is the number of rows in the matrix. This method involves computing the sum of all possible products of elements from different rows and columns, where the sign of each product is $ sign = (-1)^i $ where i is the current row. Therefore, it can be computationally expensive for large matrices.
+
+### Gauss-Elimination Method
+
+The Gauss-Elimination method has a time complexity of **O(n^3)**, where n is the number of rows in the matrix. This method involves transforming the matrix into echelon form using elementary row operations and then computing the determinant as the product of the diagonal elements. This method is generally faster than the Leibniz method, especially for large matrices.
