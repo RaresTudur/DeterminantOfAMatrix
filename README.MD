@@ -25,9 +25,5 @@ Choose the method of calculating the determinant:
 2. Leibniz method
 3. Both methods
 ```
-## Techniques
-### Leibniz method
-The Leibniz method has a time complexity of **O(n!)**, where n is the number of rows in the matrix. This method involves calculating the sum of all possible products of elements in different rows and columns, where the sign of each product is $sign = (-1)^i$ where i is the current row. Therefore, this method can be computationally expensive for large matrices.
-### Gauss–Jordan elimination method
-
-The Gauss–Jordan elimination method has a time complexity of **O(n^3)**, where n is the number of rows in the matrix. This method involves transforming the matrix into row echelon form using elementary row operations and then computing the determinant as the product of the diagonal elements. This method is generally faster than the Leibniz method, especially for large matrices.
+## Created by
+-- Tudur Rares, Grupa 142
